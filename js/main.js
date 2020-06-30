@@ -29,6 +29,9 @@ function compareNumber() {
   if (userNumber < 0) {
     console.log('El número debe estar entre 1 y 100.');
     clue.innerHTML = 'El número debe estar entre 1 y 100.';
+  } else if (userNumber > 100) {
+    console.log('El número debe estar entre 1 y 100.');
+    clue.innerHTML = 'El número debe estar entre 1 y 100.';
   } else if (userNumber < randomNumber) {
     console.log('Es menor');
     clue.innerHTML = '¡Demasiado bajo!';
