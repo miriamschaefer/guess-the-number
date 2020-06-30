@@ -9,6 +9,7 @@
 
 .title {
   margin-bottom: 20px;
+  color: lightseagreen;
 }
 
 .subtitle {
@@ -18,6 +19,14 @@
 }
 
 .form {
+  text-align: center;
+}
+
+.reload {
+  width: 170px;
+  height: 50px;
+  background-color: lightseagreen;
+  border-radius: 20px;
   text-align: center;
 }
 

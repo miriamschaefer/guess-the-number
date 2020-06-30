@@ -24,9 +24,9 @@ function compareNumber() {
 
   let attemptsCheck = (attempts += 1);
   attemptsAlert.innerHTML = `${attemptsCheck} intentos`;
-  console.log(attemptsCheck);
+  console.log(`Número de intentos ${attemptsCheck}`);
 
-  if (userNumber < 0) {
+  if (userNumber < 1) {
     console.log('El número debe estar entre 1 y 100.');
     clue.innerHTML = 'El número debe estar entre 1 y 100.';
   } else if (userNumber > 100) {
