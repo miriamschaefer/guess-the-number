@@ -13,15 +13,14 @@ let attempts = 0;
 
 //número aleatorio
 
-const randomNumber = Math.floor(Math.random() * 101) + 1;
+const randomNumber = Math.floor(Math.random() * 100) + 1;
 console.log(`Tu número aleatorio es ${randomNumber}`);
 
 //funciones
 
 function compareNumber() {
-  const userNumber = userNumberInput.value;
+  const userNumber = parseInt(userNumberInput.value);
   console.log(`El número del usuario es ${userNumber}`);
-
   let attemptsCheck = (attempts += 1);
   attemptsAlert.innerHTML = `${attemptsCheck} intentos`;
   console.log(`Número de intentos ${attemptsCheck}`);
@@ -38,7 +37,7 @@ function compareNumber() {
   } else if (userNumber > randomNumber) {
     console.log('Es mayor');
     clue.innerHTML = '¡Demasiado alto!';
-  } else {
+  } else if (userNumber === randomNumber) {
     console.log("It's a match!");
     clue.innerHTML = '¡Has ganado campeona!';
   }
