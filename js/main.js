@@ -21,7 +21,7 @@ console.log(`Tu número aleatorio es ${randomNumber}`);
 function compareNumber() {
   const userNumber = parseInt(userNumberInput.value);
   console.log(`El número del usuario es ${userNumber}`);
-  let attemptsCheck = (attempts += 1);
+  let attemptsCheck = parseInt((attempts += 1));
   attemptsAlert.innerHTML = `${attemptsCheck} intentos`;
   console.log(`Número de intentos ${attemptsCheck}`);
 
