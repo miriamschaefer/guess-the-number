@@ -6,23 +6,28 @@
     <title>Adivina el número</title>
     <link rel="stylesheet" href="./stylesheets/styles.css" />
     <link rel="stylesheet" href="./stylesheets/reset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div>
+    <main class="main">
       <h1 class="title">Adivina el número</h1>
+      <h2 class="subtitle">Introduce un número entre el 1 y el 100.</h1>
       <div class="game">
-        <form>
-          <input type="text" class="js-user-input" />
-          <input type="button" value="send" class="js-button" />
+        <form class="form">
+          <input type="number" class="js-user-input number-input" />
+          <input type="button" value="Prueba" class="js-button" />
         </form>
         <div class="box-clue">
-          <p class="clue js-clue"></p>
+          <p class="clue js-clue">Escribe un número y dale a prueba.</p>
         </div>
         <div class="box-attempts">
-          <p class="attempts js-attempts"></p>
+          <p class="attempts js-attempts">0 intentos</p>
         </div>
       </div>
-    </div>
+    </main>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>
