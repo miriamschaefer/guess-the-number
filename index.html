@@ -17,7 +17,10 @@
       <h2 class="subtitle">Introduce un número entre el 1 y el 100.</h1>
       <div class="game">
         <form class="form">
-          <input type="number" class="js-user-input number-input" />
+          <label htmlFor="user-number">Aquí tu número: </label>
+          <input
+          placeholder ="¿33?" 
+          type="number" htmlFor="user-number" class="js-user-input number-input" />
           <input type="button" value="Prueba" class="js-button send-button" />
         </form>
         <div class="box-clue">
@@ -28,7 +31,7 @@
         </div>
         
       </div>
-      <button onclick="location.reload()" class="reload">¡Juega de nuevo!</button>
+      <button class="reload">¡Juega de nuevo!</button>
     </main>
     <script type="text/javascript" src="./js/main.js"></script>
   </body>

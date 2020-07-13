@@ -2,6 +2,7 @@
 
 const button = document.querySelector('.js-button');
 const userNumberInput = document.querySelector('.js-user-input');
+const resetButton = document.querySelector('.reload');
 
 // elementos en los que se imprime la info
 const clue = document.querySelector('.js-clue');
@@ -43,4 +44,14 @@ function compareNumber() {
   }
 }
 
-button.addEventListener('click', compareNumber);
+function handleClick(ev) {
+  ev.preventDefault();
+  compareNumber();
+}
+
+function reload() {
+  location.reload();
+}
+
+button.addEventListener('click', handleClick);
+resetButton.addEventListener('click', reload);
